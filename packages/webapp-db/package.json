@@ -1,0 +1,10 @@
+{
+  "name": "@webapp/db",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "yarn wsrun test"
+  },
+  "dependencies": {
+    "mongoose": "^5.2.4"
+  }
+}

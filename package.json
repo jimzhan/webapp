@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "webapp",
+  "version": "0.1.0",
+  "description": "Unified web application",
+  "main": "index.js",
+  "repository": "https://github.com/jimzhan/webapp.git",
+  "author": "Jim Zhan <jim.zhan@me.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "yarn wsrun test"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "wsrun": "^2.2.1"
+  }
+}

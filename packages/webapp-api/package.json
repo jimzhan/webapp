@@ -1,0 +1,42 @@
+{
+  "name": "@webapp/api",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "npx nodemon --exec babel-node main.js",
+    "test": "yarn wsrun test"
+  },
+  "babel": {
+    "sourceMaps": "both",
+    "plugins": [
+      "transform-runtime",
+      "transform-object-rest-spread"
+    ],
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "@webapp/core": "*",
+    "chalk": "^2.4.1",
+    "graphql": "^0.13.2",
+    "graphql-import": "^0.6.0",
+    "graphql-tag": "^2.9.2",
+    "koa": "^2.5.2",
+    "koa-graphql": "^0.7.5",
+    "koa-mount": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.3"
+  }
+}
