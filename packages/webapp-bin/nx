@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 const glob = require('glob')
-const cmd = require('commander)
+const cmd = require('commander')
 const pkg = require('./package.json')
 
-const packages = glob.sync(`${__dirname}/../**/package.json)
+const packages = glob.sync(`${__dirname}/../**/package.json`)
                   .filter(item => !item.includes('node_modules'))
                   .filter(item => require(item).name !== pkg.name)
                   .map(item => require(item).name)

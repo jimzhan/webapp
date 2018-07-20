@@ -2,7 +2,7 @@
   "name": "@webapp/core",
   "version": "0.1.0",
   "scripts": {
-    "test": "yarn wsrun test"
+    "test": "npx jest --no-cache --config ../../etc/jest.config.js"
   },
   "babel": {
     "sourceMaps": "both",
@@ -26,8 +26,11 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "jest-cli": "^23.4.1"
   }
 }

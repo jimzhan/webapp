@@ -1,7 +1,5 @@
-import { settings } from '@webapp/core'
-import { GQLServer } from './http'
+import App from './App'
 
-const app = new GQLServer()
-const port = settings.get('port')
+const app = new App()
 
 app.start(port)

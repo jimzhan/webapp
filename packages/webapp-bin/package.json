@@ -5,6 +5,6 @@
     "nx": "nx"
   },
   "scripts": {
-    "test": "yarn wsrun test"
+    "test": "npx jest --no-cache --config ../../etc/jest.config.js"
   }
 }

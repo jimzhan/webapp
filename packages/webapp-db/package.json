@@ -2,7 +2,7 @@
   "name": "@webapp/db",
   "version": "0.1.0",
   "scripts": {
-    "test": "yarn wsrun test"
+    "test": "npx jest --no-cache --config ../../etc/jest.config.js"
   },
   "dependencies": {
     "mongoose": "^5.2.4"

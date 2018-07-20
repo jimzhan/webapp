@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "start": "npx nodemon --exec babel-node main.js",
-    "test": "yarn wsrun test"
+    "test": "npx jest --config ../../etc/jest.config.js"
   },
   "babel": {
     "sourceMaps": "both",
