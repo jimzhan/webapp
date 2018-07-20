@@ -1,0 +1,10 @@
+{
+  "name": "@webapp/bin",
+  "version": "0.1.0",
+  "bin": {
+    "nx": "nx"
+  },
+  "scripts": {
+    "test": "yarn wsrun test"
+  }
+}
