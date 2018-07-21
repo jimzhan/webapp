@@ -1,4 +1,4 @@
-console.log(process.cwd())
+console.log(`[CWD] -> ${process.cwd()}`)
 
 module.export = {
   rootDir: process.cwd(),
