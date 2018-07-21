@@ -1,0 +1,8 @@
+{
+  "name": "@webapp/dev",
+  "description": "Experimental development environmental supports",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "echo 'test'"
+  }
+}

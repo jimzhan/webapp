@@ -1,4 +1,4 @@
-import register from 'convict-register'
+const register = require('convict-register')
 
 /*
   Arguments
@@ -6,7 +6,7 @@ import register from 'convict-register'
     - recursive: whether to recursively find all settings modules.
     - settings: top level settings values.
 */
-export default register(__dirname, false, {
+module.exports = register(__dirname, false, {
   env: {
     doc: 'Deployment environment',
     format: String,

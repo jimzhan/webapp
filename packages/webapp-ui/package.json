@@ -1,7 +1,40 @@
 {
   "name": "@webapp/ui",
   "version": "0.1.0",
+  "basedir": "../..",
   "scripts": {
-    "test": "npx jest --no-cache --config ../../etc/jest.config.js"
+    "clean": "shx rm -rf build",
+    "prebuild": "shx mkdir -p $npm_package_basedir/dist",
+    "build": "cross-env NODE_ENV=production react-app-rewired build",
+    "postbuild": "npx shx mv build/** $npm_package_basedir/dist/ && npm run clean",
+    "start": "cross-env NODE_ENV=development react-app-rewired start",
+    "test": "cross-env NODE_ENV=test react-app-rewired test --coverage --env=jsdom"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  },
+  "dependencies": {
+    "antd": "^3.7.0",
+    "autoprefixer": "^9.0.0",
+    "browserslist": "^4.0.1",
+    "react": "^16.4.1",
+    "react-app-rewire-less": "^2.1.2",
+    "react-app-rewired": "^1.5.2",
+    "react-dom": "^16.4.1",
+    "react-loadable": "^5.4.0",
+    "react-scripts": "^1.1.4"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.8.0"
   }
 }

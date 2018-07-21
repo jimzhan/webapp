@@ -3,17 +3,21 @@
   "name": "webapp",
   "version": "0.1.0",
   "description": "Unified web application",
-  "main": "index.js",
+  "engines": {
+    "node": ">=10.3.0"
+  },
   "repository": "https://github.com/jimzhan/webapp.git",
   "author": "Jim Zhan <jim.zhan@me.com>",
   "license": "MIT",
   "scripts": {
+    "start": "yarn workspace @webapp/api start | yarn workspace @webapp/ui start",
     "test": "yarn wsrun test"
   },
   "workspaces": [
     "packages/*"
   ],
   "dependencies": {
+    "lerna": "2.11.0",
     "wsrun": "^2.2.1"
   }
 }

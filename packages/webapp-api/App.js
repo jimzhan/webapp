@@ -1,6 +1,6 @@
-import Koa from 'koa'
-import chalk from 'chalk'
-import { settings } from '@webapp/core'
+const Koa = require('koa')
+const chalk = require('chalk')
+const { settings } = require('@webapp/core')
 
 const { log } = console
 const port = settings.get('port')
@@ -30,4 +30,4 @@ class App extends Koa {
   }
 }
 
-export default App
+module.exports = App

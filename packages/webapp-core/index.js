@@ -1,1 +1,1 @@
-export { default as settings } from './settings'
+exports.settings = require('./settings')
