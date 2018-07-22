@@ -1,4 +1,6 @@
 import React from 'react'
-import { Button } from 'antd'
+import { BaseLayout } from './layouts'
 
-export default () => <Button>Press Me</Button>
+export default ({ children }) => (
+  <BaseLayout>{children}</BaseLayout>
+)

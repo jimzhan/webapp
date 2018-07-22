@@ -2,6 +2,7 @@
   "name": "@webapp/api",
   "version": "0.1.0",
   "main": "index.js",
+  "license": "MIT",
   "per-env": {
     "development": {
       "port": "9394"
@@ -14,7 +15,7 @@
     "build": "npx rimraf dist && babel src -d dist",
     "start": "per-env",
     "start:development": "npx nodemon index.js",
-    "test": "npx jest --env node --forceExit"
+    "test": "npx jest --forceExit --config ./jest.config.js"
   },
   "dependencies": {
     "@webapp/core": "*",
