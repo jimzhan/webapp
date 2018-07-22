@@ -4,7 +4,11 @@ import { Content, Header } from '../components'
 
 export default ({ children }) => (
   <Layout>
-    <Header>Application Header</Header>
-    <Content>{children}</Content>
+    <Header>
+Application Header
+    </Header>
+    <Content>
+      {children}
+    </Content>
   </Layout>
 )

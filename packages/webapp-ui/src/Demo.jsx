@@ -15,7 +15,15 @@ export default class Demo extends Component {
   render() {
     const { data } = this.state
     return (
-      data ? <h2>{data.data}</h2> : <h2>Loading ...</h2>
+      data ? (
+        <h2>
+          {data.data}
+        </h2>
+      ) : (
+        <h2>
+Loading ...
+        </h2>
+      )
     )
   }
 }

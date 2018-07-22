@@ -14,7 +14,7 @@ class App extends Koa {
   }
 
   start() {
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       this.server = this.listen(port)
       log(`${chalk.green('[@webapp/api]')} Server started <port: ${chalk.underline.yellow(port)}>`)
       resolve(this.server)
@@ -22,7 +22,7 @@ class App extends Koa {
   }
 
   stop() {
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       if (this.server) {
         this.server.close()
       }

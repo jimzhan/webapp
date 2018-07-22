@@ -9,7 +9,7 @@ app.use((ctx) => {
 
 app.start()
 
-signals.terminated.forEach(signal =>{
+signals.terminated.forEach((signal) => {
   process.on(signal, () => {
     app.stop()
     process.exit()

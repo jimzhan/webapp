@@ -1,3 +1,9 @@
 {
-  "eslint.packageManager": "yarn"
+  "eslint.enable": true,
+  "eslint.alwaysShowStatus": false,
+  "eslint.autoFixOnSave": true,
+  "eslint.packageManager": "yarn",
+  "eslint.workingDirectories": [
+    "./packages",
+  ]
 }
