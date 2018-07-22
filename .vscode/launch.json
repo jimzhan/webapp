@@ -9,5 +9,12 @@
       "restart": true,
       "protocol": "inspector",
     },
+    {
+      "name": "Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000",
+      "webRoot": "${workspaceRoot}/packages/webapp-ui/src"
+  }
   ]
 }
