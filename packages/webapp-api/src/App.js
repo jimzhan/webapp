@@ -1,7 +1,7 @@
-const Koa = require('koa')
-const cors = require('@koa/cors')
-const chalk = require('chalk')
-const { settings } = require('@webapp/core')
+import Koa from 'koa'
+import cors from '@koa/cors'
+import chalk from 'chalk'
+import { settings } from '@webapp/core'
 
 const { log } = console
 const port = settings.get('port')
@@ -32,4 +32,4 @@ class App extends Koa {
   }
 }
 
-module.exports = App
+export default App

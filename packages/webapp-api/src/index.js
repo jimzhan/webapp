@@ -1,5 +1,5 @@
-const { signals } = require('@webapp/core')
-const App = require('./App')
+import { signals } from '@webapp/core'
+import App from './App'
 
 const app = new App()
 
