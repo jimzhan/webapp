@@ -14,14 +14,13 @@
   "scripts": {
     "build": "npx rimraf dist && babel src -d dist",
     "start": "per-env",
-    "start:development": "npx nodemon --inspect --require esm src/index.js",
-    "start:production": "node --require esm src/index.js",
-    "test": "npx jest --forceExit --config ./jest.config.js"
+    "start:development": "npx nodemon --inspect --require esm index.js",
+    "start:production": "node --require esm index.js"
   },
   "dependencies": {
     "@koa/cors": "^2.2.2",
-    "@webapp/core": "*",
     "chalk": "^2.4.1",
+    "convict-register": "^1.1.3",
     "graphql": "^0.13.2",
     "graphql-import": "^0.6.0",
     "graphql-tag": "^2.9.2",

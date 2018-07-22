@@ -1,7 +1,7 @@
 import Koa from 'koa'
 import cors from '@koa/cors'
 import chalk from 'chalk'
-import { settings } from '@webapp/core'
+import settings from './settings'
 
 const { log } = console
 const port = settings.get('port')
