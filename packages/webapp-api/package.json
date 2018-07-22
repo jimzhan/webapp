@@ -18,6 +18,7 @@
     "test": "npx jest --forceExit --config ./jest.config.js"
   },
   "dependencies": {
+    "@koa/cors": "^2.2.2",
     "@webapp/core": "*",
     "chalk": "^2.4.1",
     "graphql": "^0.13.2",

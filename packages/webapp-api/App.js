@@ -1,4 +1,5 @@
 const Koa = require('koa')
+const cors = require('@koa/cors')
 const chalk = require('chalk')
 const { settings } = require('@webapp/core')
 
@@ -9,6 +10,7 @@ class App extends Koa {
   constructor() {
     super()
     this.server = null
+    this.use(cors())
   }
 
   start() {
