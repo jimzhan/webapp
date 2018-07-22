@@ -1,9 +1,0 @@
-{
-  "name": "@webapp/dev",
-  "description": "Experimental development environmental supports",
-  "license": "MIT",
-  "version": "0.1.0",
-  "scripts": {
-    "test": "echo 'test'"
-  }
-}
