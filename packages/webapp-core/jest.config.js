@@ -3,6 +3,7 @@ module.export = {
   testEnvironment: 'node',
   setupTestFrameworkScriptFile: require.resolve('./jest.setup'),
   testMatch: [
+    '<rootDir>/tests/**/*.js?(x)',
     '<rootDir>/__tests__/**/*.js?(x)',
     '<rootDir>/?(*.)+(spec|test).js?(x)',
   ],

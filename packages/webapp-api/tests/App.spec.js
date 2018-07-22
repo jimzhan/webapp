@@ -1,4 +1,5 @@
-const App = require('./App')
+const request = require('supertest')
+const App = require('../src/App')
 
 const app = new App()
 
@@ -12,6 +13,7 @@ afterAll(async () => {
 
 describe('Application server', () => {
   it('Start with empty routes application server', async () => {
-
+    const response = await request(app.callback()).get('/')
+    expect(response.status).toBe(404)
   })
 })

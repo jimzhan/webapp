@@ -14,7 +14,7 @@
   "scripts": {
     "build": "npx rimraf dist && babel src -d dist",
     "start": "per-env",
-    "start:development": "npx nodemon index.js",
+    "start:development": "npx nodemon src/index.js",
     "test": "npx jest --forceExit --config ./jest.config.js"
   },
   "dependencies": {

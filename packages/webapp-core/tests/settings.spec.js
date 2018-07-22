@@ -1,4 +1,4 @@
-const settings = require('../settings')
+const settings = require('../src/settings')
 
 
 describe('@webapp/core settings', () => {
