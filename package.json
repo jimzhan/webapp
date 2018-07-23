@@ -12,13 +12,15 @@
   "scripts": {
     "clean": "npx shx rm -rf node_modules && lerna clean",
     "lint": "npx eslint --ext .jsx,.js packages",
-    "start": "yarn workspace @webapp/api start | yarn workspace @webapp/ui start",
+    "start": "concurrently \"yarn workspace @webapp/api start\" \"yarn workspace @webapp/ui start\"",
     "test": "yarn workspace @webapp/test test"
   },
   "workspaces": [
     "packages/*"
   ],
   "dependencies": {
+    "concurrently": "^3.6.0",
+    "jake": "^8.0.16",
     "lerna": "2.11.0",
     "shx": "^0.3.2",
     "wsrun": "^2.2.1"

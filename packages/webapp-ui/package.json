@@ -29,6 +29,7 @@
     "browserslist": "^4.0.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "less": "3.7.1",
     "react": "^16.4.1",
     "react-app-rewire-less": "^2.1.2",
     "react-app-rewired": "^1.5.2",
