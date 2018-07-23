@@ -14,5 +14,5 @@ test.after(async () => {
 
 test('Application server with empty routes', async (t) => {
   const response = await request(app.callback()).get('/')
-  expect(response.status).toBe(404)
+  t.is(response.status, 404)
 })

@@ -13,7 +13,7 @@
     "clean": "npx shx rm -rf node_modules && lerna clean",
     "lint": "npx eslint --ext .jsx,.js packages",
     "start": "yarn workspace @webapp/api start | yarn workspace @webapp/ui start",
-    "test": "yarn wsrun test"
+    "test": "yarn workspace @webapp/test test"
   },
   "workspaces": [
     "packages/*"

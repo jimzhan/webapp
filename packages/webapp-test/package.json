@@ -6,6 +6,20 @@
   "scripts": {
     "test": "npx ava"
   },
+  "ava": {
+    "cache": true,
+    "concurrency": 5,
+    "compileEnhancements": false,
+    "failFast": true,
+    "failWithAssertions": false,
+    "files": [
+      "**/**/*.test.js"
+    ],
+    "require": [
+      "@babel/register",
+      "esm"
+    ]
+  },
   "dependencies": {
     "@babel/register": "^7.0.0-beta.54",
     "@webapp/api": "*",
