@@ -3,17 +3,9 @@
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
-  "per-env": {
-    "development": {
-      "port": "9394"
-    },
-    "production": {
-      "port": "9394"
-    }
-  },
   "scripts": {
     "build": "npx rimraf dist && babel src -d dist",
-    "start": "per-env",
+    "start": "var-env",
     "start:development": "npx nodemon --inspect --require esm index.js",
     "start:production": "node --require esm index.js"
   },
@@ -27,7 +19,7 @@
     "koa": "^2.5.2",
     "koa-graphql": "^0.7.5",
     "koa-mount": "^3.0.0",
-    "per-env": "^1.0.2"
+    "var-env": "^0.2.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.3"
