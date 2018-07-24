@@ -6,9 +6,9 @@
   "scripts": {
     "clean": "npx shx rm -rf build",
     "prebuild": "npm run clean",
-    "build": "npx cross-env NODE_ENV=production react-app-rewired build",
-    "start": "npx cross-env NODE_ENV=development react-app-rewired start",
-    "test": "npx cross-env CI=true react-app-rewired test --setupTestFrameworkScriptFile=./etc/setup-enzyme.js"
+    "build": "cross-env NODE_ENV=production react-app-rewired build",
+    "start": "cross-env NODE_ENV=development react-app-rewired start",
+    "test": "cross-env CI=true react-app-rewired test --setupTestFrameworkScriptFile=./etc/setup-enzyme.js"
   },
   "browserslist": {
     "development": [
