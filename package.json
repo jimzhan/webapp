@@ -12,7 +12,7 @@
   "scripts": {
     "preinstall": "npm install --global npx",
     "prepush": "npm run test && npx standard-version --no-verify",
-    "clean": "npx shx rm -rf node_modules && lerna clean",
+    "clean": "lerna clean && npx shx rm -rf node_modules",
     "commit": "git add . && npx git-cz",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "npx eslint --ext .jsx,.js packages",
