@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/jimzhan/webapp/compare/v0.2.1...v0.3.0) (2018-07-28)
+
+
+### Bug Fixes
+
+* **test:** babel + ava for react ([0625746](https://github.com/jimzhan/webapp/commit/0625746))
+* **test:** fallback to babel v6 ([ca00613](https://github.com/jimzhan/webapp/commit/ca00613))
+
+
+### Features
+
+* **esnext:** replace `[@webapp](https://github.com/webapp)/bin` in favor of `esnext-scripts` ([072f632](https://github.com/jimzhan/webapp/commit/072f632))
+
+
+
 <a name="0.2.2"></a>
 ## [0.2.2](https://github.com/jimzhan/webapp/compare/v0.2.0...v0.2.2) (2018-07-25)
 
