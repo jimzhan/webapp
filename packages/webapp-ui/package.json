@@ -7,7 +7,8 @@
     "prebuild": "npm run clean",
     "build": "cross-env NODE_ENV=production react-app-rewired build",
     "start": "cross-env NODE_ENV=development react-app-rewired start",
-    "test": "cross-env CI=true react-app-rewired test --setupTestFrameworkScriptFile=./etc/setup-enzyme.js"
+    "lint": "esnext lint",
+    "test": "esnext test"
   },
   "browserslist": {
     "development": [
@@ -23,6 +24,7 @@
     ]
   },
   "dependencies": {
+    "@webapp/core": "*",
     "antd": "^3.7.0",
     "autoprefixer": "^9.0.0",
     "babel-plugin-import": "^1.8.0",

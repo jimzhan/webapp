@@ -6,6 +6,9 @@
   "engines": {
     "node": ">=10.3.0"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "repository": "https://github.com/jimzhan/webapp.git",
   "author": "Jim Zhan <jim.zhan@me.com>",
   "license": "MIT",
@@ -15,16 +18,13 @@
     "clean": "lerna clean && npx shx rm -rf node_modules",
     "commit": "git add . && npx git-cz",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "lint": "npx eslint --ext .jsx,.js packages",
+    "lint": "lerna run lint",
     "start": "concurrently \"yarn workspace @webapp/api start\" \"yarn workspace @webapp/ui start\"",
-    "test": "yarn workspace @webapp/test test"
+    "test": "yarn workspace @webapp/api test && yarn workspace @webapp/ui test"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "dependencies": {
     "concurrently": "^3.6.0",
-    "lerna": "2.11.0",
+    "lerna": "^2.11.0",
     "shx": "^0.3.2",
     "wsrun": "^2.2.1"
   },
